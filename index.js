@@ -610,12 +610,29 @@ const images=[
     document.addEventListener("DOMContentLoaded",(e)=>{
    
         body.innerHTML="";
+        // fetchData();
 
-       images.map((item,index)=>{
-     console.log(`<img src=${item.avatar_url} id=${item.id}`);
-        body.innerHTML=`<img src=${item.avatar_url} id=${item.id}`
-       })
         
+       images.map((item,index)=>{
+    //  console.log(`<img src=${item.avatar_url} id=${item.id}>`);
+        body.innerHTML+=`<img src=${item.avatar_url} id=${item.id}>`
 
+
+       })
 
     })
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+  
